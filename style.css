@@ -1,0 +1,43 @@
+/* test */
+.test {
+    color: blueviolet;
+}
+
+/* body */
+.body {
+    background-color: #E1E2ED;
+
+}
+
+/* navbar section */
+.navbar-container {
+    display: flex;
+    gap: 10px;
+
+}
+.navbar-column-one {
+    border: 2px solid saddlebrown;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilePicture {
+    width: 45%;
+    border-radius: 10px;
+
+}
+.portfolio-detail {
+    column-count: 1;
+    gap: 20px;  
+}
+.portfolio-detail a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.portfolio-detail a i {
+    padding: 10px;
+}

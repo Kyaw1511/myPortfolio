@@ -10,26 +10,39 @@
 }
 
 /* navbar section */
-.navbar-container {
-    display: flex;
-    gap: 10px;
+.container {
+    display: grid;
+    grid-template-areas: 
+    "navbar-container content"
+    "footer footer";
+    grid-template-columns: 1fr 5fr;
 
 }
+/* layout for grid area */
+.container nav.navbar-container {
+    grid-area: navbar-container;
+    text-align: center;
+}
+.container div.content {
+    grid-area: content;
+    text-align: center;
+}
+.container footer.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+/* navbar-container menu section */
 .navbar-column-one {
     border: 2px solid saddlebrown;
-    width: 15%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 0px 4px 10px;
 }
 .profilePicture {
     width: 45%;
     border-radius: 10px;
 
-}
-.portfolio-detail {
-    column-count: 1;
-    gap: 20px;  
 }
 .portfolio-detail a {
     display: block;
@@ -44,4 +57,12 @@
 .talkMe i {
     font-size: 24px;
     padding: 6px;
+}
+
+/* content section */
+.content-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
 }

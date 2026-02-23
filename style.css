@@ -3,11 +3,19 @@
     color: blueviolet;
 }
 
+:root {
+    --primary-background-color : white; 
+    --btn-background-color : #19B87E;
+    --btn-hover-color : #2C92B8;
+    --btn-hover-font-color : aliceblue;
+}
+
 /* body */
 .body {
-    background-color: #E1E2ED;
+    background-color: var(--primary-background-color);
     margin: 0px;
     padding: 0px;
+    border: 3px solid green;
 }
 
 /* navbar section */
@@ -35,15 +43,17 @@
 
 /* navbar-container menu section */
 .navbar-column-one {
-    border: 2px solid saddlebrown;
+    /* border: 2px solid saddlebrown; */
     justify-content: center;
     align-items: center;
-    padding: 0px 0px 4px 10px;
+    padding: 6px;
+    text-align: center;
 }
 .profilePicture {
+    display: block;
     width: 45%;
     border-radius: 10px;
-
+    margin: 0 auto;
 }
 .portfolio-detail a {
     display: block;
@@ -69,13 +79,35 @@
 }
 
 /* header */
-.header-filter button {
-    width: 200px;
+.header-filter > .btn {
+    width: 140px;
     height: 40px;
     text-transform: uppercase;
     font-size: 18px;
+    /*  border-radius: 10px; */
+    letter-spacing: 1px;
+    border: none;
+    background-color: var(--btn-background-color);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 6px;
 }
-.header-filter button i {
-    padding: 10px;
-    margin: 0pxs;
+.header-filter > .btn i {
+    float: left;
+    margin: 0px 0px 0px 10px;
+    /* border: 2px solid saddlebrown; */
+    
 }
+
+.header-filter .btn ::after{
+    content: "";
+    clear: both;
+    /* display: table; */
+}
+.header-filter :hover {
+    background-color: var(--btn-hover-color) !important;
+    color: var(--btn-hover-font-color) !important;
+    cursor: pointer;
+}
+
+
+

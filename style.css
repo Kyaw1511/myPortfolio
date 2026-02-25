@@ -79,31 +79,37 @@
 }
 
 /* header */
-.header-filter > .btn {
+.filter {
+    display: inline-block;
+    /* border: 2px solid gray; */
+}
+.header-filter-btn {
+    display: inline;
+}
+.header-filter-btn button {
     width: 140px;
     height: 40px;
     text-transform: uppercase;
     font-size: 18px;
-    /*  border-radius: 10px; */
+    /* border-radius: 10px; */
     letter-spacing: 1px;
     border: none;
     background-color: var(--btn-background-color);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
     margin: 0 6px;
+    display: inline;
 }
-.header-filter > .btn i {
+.header-filter-btn i {  
     float: left;
     margin: 0px 0px 0px 10px;
-    /* border: 2px solid saddlebrown; */
-    
+    /* border: 2px solid saddlebrown; */ 
 }
-
-.header-filter .btn ::after{
+.header-filter-btn ::after{
     content: "";
     clear: both;
     /* display: table; */
 }
-.header-filter :hover {
+.header-filter-btn :hover {
     background-color: var(--btn-hover-color) !important;
     color: var(--btn-hover-font-color) !important;
     cursor: pointer;

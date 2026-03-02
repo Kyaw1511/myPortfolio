@@ -14,6 +14,7 @@
     --background-card-color :  #f2f2f2;
     --btn-background-color_2: #0054D1;
     --btn-pagination-border-color : #808080;
+    --background-second-panel-color : #E8E8E8;
     --background-color : #080808;
     --title-font-size: 22px;
     --sub-title-font-size: 16px;
@@ -119,6 +120,9 @@
 }
 
 /* content section */
+.content {
+    background-color: var(--background-second-panel-color);
+}
 .content-title {
     /* border: 2px solid red; */
     width: auto;
@@ -293,7 +297,7 @@
     text-align: center;
     color: var(--background-card-color);
     height: auto;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 .js {
     width: 92%;
@@ -301,7 +305,7 @@
     text-align: center;
     color: var(--background-card-color);
     height: auto;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 .bs {
     width: 88%;
@@ -309,7 +313,7 @@
     text-align: center;
     color: var(--background-card-color);
     height: auto;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 .php {
     width: 80%;
@@ -317,7 +321,7 @@
     text-align: center;
     color: var(--background-card-color);
     height: auto;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 .laravel {
     width: 70%;
@@ -325,7 +329,7 @@
     text-align: center;
     color: var(--background-card-color);
     height: auto;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 .vue {
     width: 76%;
@@ -333,6 +337,6 @@
     text-align: center;
     color: var(--background-card-color);
     height: auto;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 

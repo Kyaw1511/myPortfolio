@@ -209,6 +209,7 @@
     justify-content: center;
     list-style: none;
     padding: 0px;
+    margin: 0 0 50px 0;
 }
 .pagination li a {
     display: block;
@@ -222,6 +223,37 @@
 .pagination li a.active-pagination {
     background-color: var(--btn-background-color);
     color: var(--background-card-color);
+}
+
+/* about me */
+
+.about_me {
+    /* border: 2px solid slategrey; */
+    max-width: 100%;
+    margin: 30px 0 0 0;
+}
+.about_me p:first-child {
+    font-size : 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+.about_me-img {
+    /* border: 2px solid gold; */
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+.about_me-img img {
+    width: 45%;
+    margin: 6px auto;
+}
+.about_me p:last-child {
+    text-indent: 70px;
+    text-align: justify;
+    padding: 0 30px;
 }
 
 

@@ -38,6 +38,7 @@
     padding: 0px;
     /* border: 3px solid green; */
     width: 100%;
+    box-sizing: border-box;
 }
 
 /* navbar section */
@@ -372,5 +373,32 @@
 .download-resume button:hover {
     background-color: var(--btn-hover-color_1);
     color: var(--background-color);
+}
+
+/* pricing table */
+.pricing {
+    border: 2px solid salmon;
+    width: 90%;
+    margin: 0 auto;
+}
+.pricing-title p{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: var(--title-font-size);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight);
+    margin: 30px 0 10px 0;
+}
+.pricing > div:nth-child(2) {
+    border: 2px solid seagreen;
+    /* width: auto; */
+    margin: 0 auto;
+}
+.price-column {
+    border: 2px solid skyblue;
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
 }
 

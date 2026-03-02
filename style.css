@@ -6,10 +6,15 @@
 :root {
     --primary-background-color : white; 
     --btn-background-color : #19B87E;
+    --btn-font-color : #04AA6D;
+    --btn-background-color_1 : #2196F3;
     --btn-hover-color : #2C92B8;
     --btn-hover-font-color : aliceblue;
     --card-navbar-aTag-color: #F87C63;
     --background-card-color :  #f2f2f2;
+    --btn-background-color_2: #0054D1;
+    --btn-pagination-border-color : #808080;
+    --background-color : #080808;
 }
 
 /* body */
@@ -180,6 +185,43 @@
 .column-photo-card img {
     max-width: 100%;
 }
-
+.column-photo-card img:hover {
+    /* border: 2px solid sienna; */
+    opacity: 0.5;
+}
+.column-photo-card p {
+    display: inline;
+}
+.column-photo-card button {
+    /* border: 2px solid slateblue; */
+    border: var(--background-card-color);
+    color: var(--background-card-color);
+    background-color: var(--btn-background-color_2);
+    font-weight: bold;
+    float: right;
+    border-radius: 4px;
+    padding: 4px 10px;
+    text-align: center;
+    margin: 2px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+.pagination li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid var(--btn-pagination-border-color);
+    color: var(--background-color);
+    margin: 0 4px;
+    border-radius: 4px;
+}
+.pagination li a.active-pagination {
+    background-color: var(--btn-background-color);
+    color: var(--background-card-color);
+}
 
 

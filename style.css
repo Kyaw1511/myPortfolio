@@ -6,21 +6,29 @@
 :root {
     --primary-background-color : white; 
     --btn-background-color : #19B87E;
-    --btn-font-color : #04AA6D;
-    --btn-background-color_1 : #2196F3;
-    --btn-hover-color : #2C92B8;
-    --btn-hover-font-color : aliceblue;
-    --card-navbar-aTag-color: #F87C63;
     --background-card-color :  #f2f2f2;
-    --btn-background-color_2: #0054D1;
-    --btn-pagination-border-color : #808080;
     --background-second-panel-color : #E8E8E8;
     --background-color : #080808;
+
+    --btn-font-color : #04AA6D;
+    --btn-background-color_1 : #2196F3;
+    --btn-background-color_2: #0054D1;
+    --btn-background-color_3 : tomato;
+
+    --btn-hover-color : #2C92B8;
+    --btn-hover-color_1: rgba(255, 99, 71, 0.5);
+    --btn-hover-font-color : aliceblue;
+    --card-navbar-aTag-color: #F87C63;
+    
+    --btn-pagination-border-color : #808080;
+    
     --title-font-size: 22px;
     --sub-title-font-size: 16px;
+    --btn-font-size: 13px;
     --letter-spacing: 3px;
     --text-transform: uppercase;
     --font-weight: bolder;
+    
 }
 
 /* body */
@@ -338,5 +346,31 @@
     color: var(--background-card-color);
     height: auto;
     padding: 8px 0;
+}
+/* download Resume */
+.download-resume {
+    /* border: 2px solid aqua; */
+    max-width: 90%;
+    margin: 10px auto;
+}
+.download-resume button {
+    padding: 10px 14px;
+    background-color: var(--btn-background-color_3);
+    color: var(--background-card-color);
+    border-radius: 4px;
+    font-size: var(--btn-font-size);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    width: auto;
+    font-weight: var(--font-weight);
+    border: #E8E8E8;
+}
+.download-resume button i {
+    font-size: var(--title-font-size);
+    padding: 0 6px;
+}
+.download-resume button:hover {
+    background-color: var(--btn-hover-color_1);
+    color: var(--background-color);
 }
 

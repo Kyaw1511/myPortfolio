@@ -14,6 +14,10 @@
     --btn-background-color_1 : #2196F3;
     --btn-background-color_2: #0054D1;
     --btn-background-color_3 : tomato;
+    --btn-background-color_4: #6A7282;
+    --btn-background-color_5: #25AD98;
+    --btn-background-color_6: #1D8CB4;
+    --btn-background-color_7: #DBDEC3;
 
     --btn-hover-color : #2C92B8;
     --btn-hover-color_1: rgba(255, 99, 71, 0.5);
@@ -377,7 +381,7 @@
 
 /* pricing table */
 .pricing {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     width: 90%;
     margin: 0 auto;
 }
@@ -392,7 +396,7 @@
 }
 
 .pricing > div:last-child {
-    border: 2px solid skyblue;
+    /* border: 2px solid skyblue; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -403,19 +407,56 @@
 .pricing {
     margin: 0 auto;
     text-align: center;
-    border: 1px solid sienna;
+    /* border: 1px solid sienna; */
     border-radius: 8px;
-    padding: 20px;
+     /* padding: 20px; */
 }
 .price {
-    border: 2px solid slateblue;
-    /* list-style: none; */
+    /* border: 2px solid slateblue; */
+    list-style: none;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
-    width: 100%;
+    width: 380px;
+    /* height: 220px; */
+    /* padding: 20px; */
 }
-.price > li:first-child {
-    border: 2px solid goldenrod;
+.price > li {
+    /* border: 1px 1px 0 1px  solid saddlebrown; */
+    border-top: 1px solid var(--btn-background-color_4);
+    border-right: 1px solid var(--btn-background-color_4);
+    border-bottom: 0 solid var(--btn-background-color_4);
+    border-left: 1px solid var(--btn-background-color_4);
+}
+.basic, .premium {
+    /* border: 2px solid goldenrod; */
     font-weight: var(--font-weight);
     text-align: center;
+    background-color: var(--btn-background-color_4);
+    color: var(--background-card-color);
+}
+.pro {
+    font-weight: var(--font-weight);
+    text-align: center;
+    background-color: var(--btn-background-color_5);
+    color: var(--background-card-color);
+}
+.price > li {
+    padding: 20px;
+}
+.price > li:nth-child(2), .price > li:last-child {
+    background-color: var(--btn-background-color_7);
+    
+}
+.price > li:last-child > a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: var(--font-weight);
+}
+.price-column {
+    transition: transform .5s;
+}
+.price-column:hover {
+    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }

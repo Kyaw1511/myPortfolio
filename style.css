@@ -464,3 +464,30 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
 }
+
+/* contact section */
+.contact {
+    border: 1px solid springgreen;
+    max-width: 90%;
+    margin: 30px auto;
+}
+.contact_information {
+    border: 1px solid sandybrown;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_information div {
+    border: 1px solid slateblue;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_information div a {
+    text-decoration: none;
+    margin-top: 6px;
+}

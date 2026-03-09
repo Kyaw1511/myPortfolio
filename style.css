@@ -471,6 +471,15 @@
     max-width: 90%;
     margin: 30px auto;
 }
+.contact-selection-title p{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: var(--title-font-size);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight);
+    margin: 30px 0 10px 0;
+}
 .contact_information {
     /* border: 1px solid sandybrown; */
     padding: 10px;
@@ -490,6 +499,7 @@
     justify-content: center;
     border-radius: 10px;
     color: var(--background-card-color);
+    transition: transform .5s;
 }
 .contact_information div i {
     font-size: 40px;
@@ -500,6 +510,11 @@
     margin-top: 6px;
     color: var(--background-card-color);
     font-size: 22px;
+}
+.contact_information div:hover {
+    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 
 /* inquire form */

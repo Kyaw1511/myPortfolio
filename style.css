@@ -571,3 +571,40 @@
     background-color: var(--btn-hover-color_1);
     color: var(--background-color);
 }
+
+/* footer section */
+.footer {
+    /* border: 1px solid goldenrod; */
+    width: 90%;
+    margin: 10px auto;
+}
+.footer div {
+    /* border: 1px solid hotpink; */
+    font-size: var(--title-font-size);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer div i {
+    /* border: 1px solid #19B87E; */
+    font-size: xx-large;
+    padding: 10px;
+    transition: transform 3s;
+    /* display: flex; */
+}
+.footer div > div {
+    /* border: 1px solid slategray; */
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+    /* display: flex; */
+}
+.footer div > div > a {
+    padding-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--background-color);
+}
+.footer div i:hover {
+    transform: rotate(270deg);
+}
